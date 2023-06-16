@@ -1,6 +1,6 @@
 import os ,random, struct
 from random import randint
-from Crypto.Cipher import AES
+from pycryptodome import AES
 from Crypto.Hash import SHA256
 
 path = [ os.getenv('HOME') ] #path of our target folder
